@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bc6070bf87d83433fd64dfef892688e2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bc6070bf87d83433fd64dfef892688e2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bc6070bf87d83433fd64dfef892688e2 = L.map(
+                "map_bc6070bf87d83433fd64dfef892688e2",
+                {
+                    center: [56.32463861979883, 43.99471526174922],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3d62587aa8a107861831f75d4bfe98fe = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bc6070bf87d83433fd64dfef892688e2);
+        
+    
+            var tile_layer_76334b38c2a4665c649bd7a727be2703 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bc6070bf87d83433fd64dfef892688e2);
+        
+    
+            var marker_ef8fe45506d5ba6ccfdd5467cdda32fd = L.marker(
+                [56.328324, 43.961313],
+                {}
+            ).addTo(map_bc6070bf87d83433fd64dfef892688e2);
+        
+    
+            var icon_a291238b76087301466192ff0fd93813 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ef8fe45506d5ba6ccfdd5467cdda32fd.setIcon(icon_a291238b76087301466192ff0fd93813);
+        
+    
+        var popup_706f3b32adefbb29c92b5b965a804ed3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21b98283bee0665918fe8c52561fc2d1 = $(`<div id="html_21b98283bee0665918fe8c52561fc2d1" style="width: 100.0%; height: 100.0%;"><b>Нижегородская Ярмарка</b><br><i>Совнаркомовская улица, 13</i></div>`)[0];
+                popup_706f3b32adefbb29c92b5b965a804ed3.setContent(html_21b98283bee0665918fe8c52561fc2d1);
+            
+        
+
+        marker_ef8fe45506d5ba6ccfdd5467cdda32fd.bindPopup(popup_706f3b32adefbb29c92b5b965a804ed3)
+        ;
+
+        
+    
+    
+            marker_ef8fe45506d5ba6ccfdd5467cdda32fd.bindTooltip(
+                `<div>
+                     Нижегородская Ярмарка
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4988c3670b562ad28e11a29829ff7bfa = L.marker(
+                [56.327851, 44.0017],
+                {}
+            ).addTo(map_bc6070bf87d83433fd64dfef892688e2);
+        
+    
+            var icon_5a83758827373ce50e1808141a10f36e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_4988c3670b562ad28e11a29829ff7bfa.setIcon(icon_5a83758827373ce50e1808141a10f36e);
+        
+    
+        var popup_00ee1b4ad886f4d75b085578cebc0ded = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a781ce0feadf7131e520b041a7d2fa7d = $(`<div id="html_a781ce0feadf7131e520b041a7d2fa7d" style="width: 100.0%; height: 100.0%;"><b>Нижегородский Кремль</b><br><i>Площадь Минина</i></div>`)[0];
+                popup_00ee1b4ad886f4d75b085578cebc0ded.setContent(html_a781ce0feadf7131e520b041a7d2fa7d);
+            
+        
+
+        marker_4988c3670b562ad28e11a29829ff7bfa.bindPopup(popup_00ee1b4ad886f4d75b085578cebc0ded)
+        ;
+
+        
+    
+    
+            marker_4988c3670b562ad28e11a29829ff7bfa.bindTooltip(
+                `<div>
+                     Нижегородский Кремль
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_deebf8b4771506a595a64a96af1cec19 = L.featureGroup(
+                {}
+            ).addTo(map_bc6070bf87d83433fd64dfef892688e2);
+        
+    
+            var polygon_5112f0852c765b08602653b10e7c1986 = L.polygon(
+                [[56.32582, 43.99897], [56.32567, 44.0014], [56.32705, 44.00567], [56.33011, 44.0089], [56.33075, 44.00625], [56.33081, 44.00346], [56.33053, 44.00179], [56.32987, 43.99962], [56.32882, 43.99887], [56.32878, 43.998], [56.32757, 43.99726], [56.32581, 43.99895]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#A62000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_deebf8b4771506a595a64a96af1cec19);
+        
+    
+        var popup_8384930c5372384c5459aeff0a192955 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12c834ce7344636863046a5629134ce9 = $(`<div id="html_12c834ce7344636863046a5629134ce9" style="width: 100.0%; height: 100.0%;">Стены Нижегородского Кремля</div>`)[0];
+                popup_8384930c5372384c5459aeff0a192955.setContent(html_12c834ce7344636863046a5629134ce9);
+            
+        
+
+        polygon_5112f0852c765b08602653b10e7c1986.bindPopup(popup_8384930c5372384c5459aeff0a192955)
+        ;
+
+        
+    
+    
+            var layer_control_9bf6fee6d52f1bf2927eb51f29e50274 = {
+                base_layers : {
+                    "\u0423\u043b\u0438\u0447\u043d\u0430\u044f \u043a\u0430\u0440\u0442\u0430" : tile_layer_3d62587aa8a107861831f75d4bfe98fe,
+                    "\u0424\u0438\u0437\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u043a\u0430\u0440\u0442\u0430" : tile_layer_76334b38c2a4665c649bd7a727be2703,
+                },
+                overlays :  {
+                    "\u0421\u0442\u0435\u043d\u044b \u041d\u0438\u0436\u0435\u0433\u043e\u0440\u043e\u0434\u0441\u043a\u043e\u0433\u043e \u041a\u0440\u0435\u043c\u043b\u044f" : feature_group_deebf8b4771506a595a64a96af1cec19,
+                },
+            };
+            L.control.layers(
+                layer_control_9bf6fee6d52f1bf2927eb51f29e50274.base_layers,
+                layer_control_9bf6fee6d52f1bf2927eb51f29e50274.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_bc6070bf87d83433fd64dfef892688e2);
+            tile_layer_76334b38c2a4665c649bd7a727be2703.remove();
+        
+</script>
+</html>
